@@ -10,3 +10,5 @@ function oddSquares(arr) {
 console.log(oddSquares([1, 2, 3, 4, 5]))
 console.log(oddSquares([-10, -5, 0, 5, 10]))
 console.log(oddSquares([1, 1, 1, 1, 1]))
+
+//without using the built in functions one could have used loops and conditionals to render the same output
