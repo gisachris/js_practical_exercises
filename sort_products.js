@@ -2,9 +2,9 @@
 //sort them in ascending order based on price
 
 const sortProducts = (products) => {
-    let sorted_products = products.sort((a, b) => { b.price - a.price })
+    let sorted_products = products.sort((a, b) => a.price - b.price)
     return sorted_products
 }
 
 //examples
-console.log(sortProducts([{ name: 'banana', price: 1 }, { name: 'apple', price: 2 }, { name: 'orange', price: 3 }]))
+console.log(sortProducts([{ name: 'apple', price: 22500 }, { name: 'banana', price: 12000 }, { name: 'orange', price: 32000 }]))
