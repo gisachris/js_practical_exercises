@@ -18,7 +18,23 @@ function myMap(mymapCallback) {
 }
 
 //filter
-function myFilter() { }
+function filterCallback(item) {
+    //specify condition to satisfy
+    if (item < 5) return true
+    return false
+}
+function myFilter(filterCallback) {
+    let arr = [24, 5, 4, 6, 3]
+    let newArr = []
+
+    for (let i = 0; i < arr.length; i++) {
+        if (filterCallback(arr[i])) {
+            newArr.push(arr[i])
+        }
+    }
+
+    return newArr
+}
 
 //reduce
 function myreduce() { }
