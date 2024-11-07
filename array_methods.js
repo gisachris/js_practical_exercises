@@ -60,9 +60,22 @@ function myReduce(reduceCallback, initialVal = null) {
 }
 
 //foreach
-function myForEach() { }
+function forEachCallback(item) {
+    return item + 1
+}
+
+function myForEach(forEachCallback) {
+    let arr = [1, 2, 3]
+
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = forEachCallback(arr[i])
+    }
+
+    return arr
+}
 
 //examples
 console.log("mymap=>", myMap(mapCallback))
 console.log("myFilter=>", myFilter(filterCallback))
 console.log("myReduce=>", myReduce(reduceCallback))
+console.log("myforEach=>", myForEach(forEachCallback))
